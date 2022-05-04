@@ -22,6 +22,5 @@ public class Coin : Collectable
     {
         Inventory playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         playerInventory.addCoins(value);
-        Debug.Log(playerInventory.coins);
     }
 }

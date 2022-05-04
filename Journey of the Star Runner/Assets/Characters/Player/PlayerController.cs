@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("SpeedMultiplier", 1f);
         }
+
     }
 
     /// <summary>
@@ -136,6 +137,14 @@ public class PlayerController : MonoBehaviour
     {
         fireInput = fireValue.Get<Vector2>();
         Enums.SetActionDirection(ref fireDirection, fireInput);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            FindObjectOfType<GameManager>().PlayerDied();
+        }
     }
 
 }
