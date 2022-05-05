@@ -18,6 +18,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Game_Scene_1");
+    }
+
     void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

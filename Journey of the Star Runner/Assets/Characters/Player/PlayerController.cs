@@ -139,11 +139,25 @@ public class PlayerController : MonoBehaviour
         Enums.SetActionDirection(ref fireDirection, fireInput);
     }
 
+    IEnumerator PlayerHit()
+    {
+        animator.SetBool("isHit", true);
+
+        yield return new WaitForSeconds(0.2f);
+
+        animator.SetBool("isHit", false);
+    }
+
+    // Handle Player Collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            FindObjectOfType<GameManager>().PlayerDied();
+            StartCoroutine(PlayerHit());
+            inventory.removeLives(1);
+
+            if (inventory.lives == 0)
+                FindObjectOfType<GameManager>().PlayerDied();
         }
     }
 

@@ -7,6 +7,7 @@ using TMPro;
 public class Interface : MonoBehaviour
 {
     public TextMeshProUGUI coinsValueText;
+    public TextMeshProUGUI livesValueText;
     
     Inventory inventory;
     
@@ -14,12 +15,20 @@ public class Interface : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+
+        updateLives();
+        updateCoins();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void updateLives()
+    {
+        livesValueText.text = inventory.lives.ToString();
     }
 
     public void updateCoins()
