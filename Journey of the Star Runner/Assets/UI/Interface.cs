@@ -8,6 +8,7 @@ public class Interface : MonoBehaviour
 {
     public TextMeshProUGUI coinsValueText;
     public TextMeshProUGUI livesValueText;
+    public TextMeshProUGUI Timer;
     
     Inventory inventory;
     
