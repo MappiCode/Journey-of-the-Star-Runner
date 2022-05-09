@@ -6,8 +6,6 @@ public class Slime : Enemy
 {
     Animator animator;
 
-    
-
     // Start is called before the first frame update
     new void Start()
     {

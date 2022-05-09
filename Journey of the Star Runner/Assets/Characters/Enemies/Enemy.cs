@@ -58,7 +58,7 @@ public abstract class Enemy : MonoBehaviour
     /// </summary>
     void DropLoot()
     {
-        if (dropPropability < Random.Range(0, 1f))
+        if (dropPropability > Random.Range(0.0f, 1.0f))
         {
             GameObject droppedItem = drops[Random.Range(0, drops.Length)];
             Instantiate(droppedItem, gameObject.transform.position + Vector3.down * 0.02f, Quaternion.identity);

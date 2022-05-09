@@ -141,7 +141,7 @@ MonoBehaviour:
   speed: 0.2
   drops:
   - {fileID: 2993232375459601572, guid: 82ffbe50c5bb0ec428bceb3aa7162eb1, type: 3}
-  dropPropability: 0.5
+  dropPropability: 0.1
 --- !u!95 &7212475218017604843
 Animator:
   serializedVersion: 4
