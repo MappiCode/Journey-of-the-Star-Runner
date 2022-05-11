@@ -22,6 +22,7 @@ public abstract class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Movement
         Vector2 direction = new Vector2(player.position.x - rb.position.x, player.position.y - rb.position.y);
         direction.Normalize();
         rb.MovePosition(rb.position + speed * Time.fixedDeltaTime * direction);

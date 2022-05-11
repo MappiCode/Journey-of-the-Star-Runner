@@ -7,6 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int levelTimer = 10;
+    int levelTime;
 
     bool playerGotHit = false;
 
@@ -14,8 +15,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        levelTime = levelTimer;
         ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
         StartCoroutine(LevelCountdown());
+        ui.Slider.value = 1;
     }
 
     IEnumerator LevelCountdown()
@@ -25,6 +28,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             levelTimer -= 1;
+            ui.Slider.value = (float) levelTimer / levelTime;
             ui.Timer.text = levelTimer.ToString();
         }
     }

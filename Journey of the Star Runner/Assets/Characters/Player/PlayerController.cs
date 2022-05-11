@@ -6,16 +6,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public Enums.Direction moveDirection;
-    public Enums.Direction fireDirection;
-
     public float moveSpeed = 1f;
     public float minMoveValue = 0.2f;
     public float collisionOffsetNorth = 0.05f;
     public ContactFilter2D movementFilter;
 
-    public Vector2 movementInput;
-    public Vector2 fireInput;
+    Vector2 movementInput;
+    Vector2 fireInput;
+    public Enums.Direction moveDirection;
+    public Enums.Direction fireDirection;
 
     Rigidbody2D rb;
     Animator animator;
