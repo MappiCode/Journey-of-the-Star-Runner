@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5983
+  controlID: 27819
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 5984
+  controlID: 27820
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5956
+  controlID: 27821
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1e840000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 443affffecbdffff18beffff6ebffffff0f3ffff00f4ffff12f4ffff54f5ffff80f5ffff28fbffff7e860000c2860000
+      m_ExpandedIDs: a068fcff60fcfcff4e0bfdffc035fdfff835fdff465bffff725bffff3c89ffff7489ffff168bffff8e8effffea8fffff2290ffff7e92ffffaa92ffffd695ffff9c99ffffb2b9ffffe6b9ffff1ebaffffbed1ffffead1ffff8cd2ffffcad3ffff62f7ffffbef7ffffccf8ffff76f9ffff28fbffffca660000e066000072ab000064b8000084b80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -366,7 +366,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.066112906, y: 0.17454247, z: 0.016303705}
+    m_Target: {x: -0.034414858, y: -0.037121266, z: -0.0055258814}
     speed: 2
-    m_Value: {x: -0.066112906, y: 0.17454247, z: 0.016303705}
+    m_Value: {x: -0.034414858, y: -0.037121266, z: -0.0055258814}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -579,9 +579,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.9101704
+    m_Target: 1.0794106
     speed: 2
-    m_Value: 0.9101704
+    m_Value: 1.0794106
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1253,13 +1253,13 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Art/Menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Art/Tiles
+  - Assets/Art/Menu
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\morte\Documents\Studium\Semester IV\Interaktive Medien\Journey-of-the-Star-Runner\Journey
     of the Star Runner
@@ -1267,9 +1267,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 03ca9a3b
-    m_LastClickedID: 1000000003
-    m_ExpandedIDs: 00000000d8650000da650000dc650000de650000e0650000e2650000e4650000e6650000e8650000ea650000ec650000ee65000000ca9a3b
+    m_SelectedIDs: 3c720000
+    m_LastClickedID: 29244
+    m_ExpandedIDs: 000000001a6600001c6600001e66000020660000226600002466000026660000286600002a6600002c6600002e660000306600004466000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8650000da650000dc650000de650000e0650000e2650000e4650000e6650000e8650000ea650000ec650000ee65000000ca9a3b
+    m_ExpandedIDs: 000000001a6600001c6600001e66000020660000226600002466000026660000286600002a6600002c6600002e6600003066000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1322,8 +1322,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1e840000
-    m_LastClickedInstanceID: 33822
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000b07a0000f45400000000000046ac0000e8860000e06100001a62000000ebffff
     m_RenameOverlay:
@@ -1515,4 +1515,4 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 34430
+  m_LastSelectedObjectID: 47204

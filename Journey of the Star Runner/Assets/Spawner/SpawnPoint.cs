@@ -17,12 +17,6 @@ public class SpawnPoint : MonoBehaviour
         StartCoroutine(SpawnEnemyCO());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator SpawnEnemyCO()
     {
         while (manager.levelTimer > 0)

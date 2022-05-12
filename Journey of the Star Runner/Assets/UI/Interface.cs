@@ -16,6 +16,13 @@ public class Interface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TextMeshProUGUI[] textChildren = gameObject.GetComponentsInChildren<TextMeshProUGUI>();
+        coinsValueText = textChildren[0];
+        livesValueText = textChildren[1];
+        Timer = textChildren[2];
+
+        Slider = gameObject.GetComponentInChildren<Slider>();
+
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
         updateLives();

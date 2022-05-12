@@ -1924,7 +1924,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1962,7 +1962,7 @@ TextureImporter:
       Main_char_animated_70: 8047356958707451088
       Main_char_animated_14: -3306282271254728668
       Main_char_animated_49: -7244539527830339920
-      Main_char_animated_1: -7784099872873467615
+      Main_char_animated_33: 3056203135551484991
       Main_char_animated_24: 3696613211842460940
       Main_char_animated_76: -1432917797
       Main_char_animated_36: 6626898107387127387
@@ -2022,8 +2022,8 @@ TextureImporter:
       Main_char_animated_29: -8720913937684951794
       Main_char_animated_57: -7504849523766564483
       Main_char_animated_18: 4130120446442931235
-      Main_char_animated_33: 3056203135551484991
       Main_char_animated_34: -1175018526353609032
+      Main_char_animated_1: -7784099872873467615
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

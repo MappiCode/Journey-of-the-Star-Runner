@@ -13,17 +13,19 @@ public class GameManager : MonoBehaviour
 
     Interface ui;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(1);
         levelTime = levelTimer;
         ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
         StartCoroutine(LevelCountdown());
-        ui.Slider.value = 1;
     }
 
     IEnumerator LevelCountdown()
     {
+        ui.Slider.value = 1;
         ui.Timer.text = levelTimer.ToString();
+
         while (levelTimer > 0)
         {
             yield return new WaitForSeconds(1);
