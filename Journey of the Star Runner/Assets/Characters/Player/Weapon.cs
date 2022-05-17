@@ -54,7 +54,6 @@ public class Weapon : MonoBehaviour
         if (isFireHeld)
         {
             isFireHeld = false;
-            // Anything to do upon cancelling the firing
         }
     }
 

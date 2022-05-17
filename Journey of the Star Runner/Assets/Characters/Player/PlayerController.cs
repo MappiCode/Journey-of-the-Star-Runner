@@ -125,13 +125,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    // is called from InputSystem
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
         Enums.SetActionDirection(ref moveDirection, movementInput);
     }
 
+    // is called from InputSystem
     void OnLook(InputValue fireValue)
     {
         fireInput = fireValue.Get<Vector2>();

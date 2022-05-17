@@ -14,10 +14,10 @@ public class SpawnPoint : MonoBehaviour
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
         
-        StartCoroutine(SpawnEnemyCO());
+        StartCoroutine(SpawnEnemyCo());
     }
 
-    IEnumerator SpawnEnemyCO()
+    IEnumerator SpawnEnemyCo()
     {
         while (manager.levelTimer > 0)
         {

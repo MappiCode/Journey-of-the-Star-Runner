@@ -15,13 +15,15 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        yield return new WaitForSeconds(1);
-        levelTime = levelTimer;
         ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
-        StartCoroutine(LevelCountdown());
+        levelTime = levelTimer;
+
+        yield return new WaitForSeconds(1);
+        
+        StartCoroutine(LevelCountdownCo());
     }
 
-    IEnumerator LevelCountdown()
+    IEnumerator LevelCountdownCo()
     {
         ui.Slider.value = 1;
         ui.Timer.text = levelTimer.ToString();
@@ -31,7 +33,6 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             levelTimer -= 1;
             ui.Slider.value = (float) levelTimer / levelTime;
-            ui.Timer.text = levelTimer.ToString();
         }
     }
 
@@ -42,12 +43,14 @@ public class GameManager : MonoBehaviour
             playerGotHit = true;
             Debug.Log("Game Over");
 
-            RestartGame();
+            StopCoroutine(LevelCountdownCo());
+
+            SceneManager.LoadScene("GameOver_Screen");
         }
     }
 
-    void RestartGame()
+    public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     } 
 }

@@ -23,24 +23,22 @@ public class Interface : MonoBehaviour
 
         Slider = gameObject.GetComponentInChildren<Slider>();
 
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        if (MainManager.instance != null)
+        {
+            inventory = MainManager.instance.inventory; 
+        }else
+            inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
-        updateLives();
-        updateCoins();
+        UpdateLives();
+        UpdateCoins();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void updateLives()
+    public void UpdateLives()
     {
         livesValueText.text = inventory.lives.ToString();
     }
 
-    public void updateCoins()
+    public void UpdateCoins()
     {
         coinsValueText.text = inventory.coins.ToString();
     }

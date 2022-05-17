@@ -12,36 +12,35 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
-    }
+        if (MainManager.instance != null)
+        {
+            MainManager.instance.inventory = this;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
     }
 
     public void addLives(int value)
     {
         lives += value;
-        ui.updateLives();
+        ui.UpdateLives();
     }
 
     public void removeLives(int value)
     {
         lives -= value;
-        ui.updateLives();
+        ui.UpdateLives();
     }
 
     public void addCoins(int value)
     {
         coins += value;
-        ui.updateCoins();
+        ui.UpdateCoins();
     }
 
     public void removeCoins(int value)
     {
         coins -= value;
-        ui.updateCoins();
+        ui.UpdateCoins();
     }
 }
