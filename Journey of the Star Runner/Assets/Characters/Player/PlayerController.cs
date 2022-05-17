@@ -27,7 +27,11 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        inventory = GetComponent<Inventory>();
+
+        if (MainManager.instance != null)
+            inventory = MainManager.instance.inventory;
+        else
+            inventory = GetComponent<Inventory>();
     }
 
     private void FixedUpdate()

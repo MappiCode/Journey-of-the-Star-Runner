@@ -29,6 +29,13 @@ public class Weapon : MonoBehaviour
         _playerControlls.Controlls.Fire.canceled += Fire_canceled;
     }
 
+    private void OnDestroy()
+    {
+        _playerControlls.Controlls.Fire.performed -= Fire_performed;
+        _playerControlls.Controlls.Fire.canceled -= Fire_canceled;
+    }
+
+
     IEnumerator FireHoldCo()
     {
         while (isFireHeld)

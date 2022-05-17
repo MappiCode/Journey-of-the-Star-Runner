@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
         levelTime = levelTimer;
+
+        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
 
         yield return new WaitForSeconds(1);
         
@@ -26,7 +27,6 @@ public class GameManager : MonoBehaviour
     IEnumerator LevelCountdownCo()
     {
         ui.Slider.value = 1;
-        ui.Timer.text = levelTimer.ToString();
 
         while (levelTimer > 0)
         {
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 
             StopCoroutine(LevelCountdownCo());
 
-            SceneManager.LoadScene("GameOver_Screen");
+            SceneManager.LoadScene("GameOverScreen");
         }
     }
 
