@@ -21,6 +21,8 @@ public class Interface : MonoBehaviour
         livesValueText = textChildren[1];
         Timer = textChildren[2];
 
+        coinsValueText = GetComponentInChildren<TextMeshProUGUI>();
+
         Slider = gameObject.GetComponentInChildren<Slider>();
 
         if (MainManager.instance != null)

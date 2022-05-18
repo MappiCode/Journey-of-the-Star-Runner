@@ -6,21 +6,17 @@ public class Coin : Collectable
 {
     public int value = 1;
 
+
+    Inventory playerInventory;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().inventory;
     }
 
     void Collected()
     {
-        Inventory playerInventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         playerInventory.addCoins(value);
     }
 }
