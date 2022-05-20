@@ -6,8 +6,6 @@ public class Inventory : MonoBehaviour
 {
     public int lives = 3;
     public int coins = 0;
-    
-    public Interface ui;
 
     // Start is called before the first frame update
     void Start()
@@ -16,31 +14,29 @@ public class Inventory : MonoBehaviour
         {
             MainManager.instance.inventory = this;
         }
-
-        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
     }
 
     public void addLives(int value)
     {
         lives += value;
-        ui.UpdateLives();
+        MainManager.instance.ui.UpdateLives();
     }
 
     public void removeLives(int value)
     {
         lives -= value;
-        ui.UpdateLives();
+        MainManager.instance.ui.UpdateLives();
     }
 
     public void addCoins(int value)
     {
         coins += value;
-        ui.UpdateCoins();
+        MainManager.instance.ui.UpdateCoins();
     }
 
     public void removeCoins(int value)
     {
         coins -= value;
-        ui.UpdateCoins();
+        MainManager.instance.ui.UpdateCoins();
     }
 }

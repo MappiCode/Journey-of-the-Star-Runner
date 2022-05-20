@@ -27,8 +27,10 @@ public class Interface : MonoBehaviour
 
         if (MainManager.instance != null)
         {
-            inventory = MainManager.instance.inventory; 
-        }else
+            inventory = MainManager.instance.inventory;
+            MainManager.instance.ui = this;
+        }
+        else
             inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
         UpdateLives();

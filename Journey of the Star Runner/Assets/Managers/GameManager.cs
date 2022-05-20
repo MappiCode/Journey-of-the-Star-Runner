@@ -13,24 +13,19 @@ public class GameManager : MonoBehaviour
 
     public Interface ui;
 
-    private IEnumerator Start()
+    private void Start()
     {
         levelTime = levelTimer;
 
         ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
-
-        yield return new WaitForEndOfFrame();
-        
-        if (MainManager.instance != null)
-            MainManager.instance.inventory.ui = ui;
-
         
         StartCoroutine(LevelCountdownCo());
     }
 
     IEnumerator LevelCountdownCo()
     {
-        ui.Slider.value = 1;
+        if (ui != null)
+            ui.Slider.value = 1;
 
         yield return new WaitForSeconds(1);
 
@@ -39,7 +34,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             levelTimer -= 1;
             ui.Slider.value = (float) levelTimer / levelTime;
-            Debug.Log(ui.Slider.value);
+            //Debug.Log(ui.Slider.value);
         }
     }
 
