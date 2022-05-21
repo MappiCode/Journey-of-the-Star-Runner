@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelTimer: 10
+  ui: {fileID: 0}
 --- !u!1 &364411024
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,14 +753,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1968495169}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: StartGame
+          m_StringArgument: SettingsScreen
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &447767826
@@ -875,8 +876,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -900,8 +901,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1193,8 +1194,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Beenden
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1218,8 +1219,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1313,6 +1314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!1 &1521998980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,8 +1534,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Optionen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1557,8 +1559,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

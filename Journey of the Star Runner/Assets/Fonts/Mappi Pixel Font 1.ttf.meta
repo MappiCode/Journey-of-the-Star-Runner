@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31bee3032e0e13649866093a272575e0
+guid: 9b6a61f09c23aaa4fa90996f01b5d819
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -12,7 +12,7 @@ TrueTypeFontImporter:
   - Mappi Pixel Font
   fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 0
+  fontRenderingMode: 2
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1

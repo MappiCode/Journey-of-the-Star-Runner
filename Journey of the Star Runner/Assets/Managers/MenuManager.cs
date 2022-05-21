@@ -10,9 +10,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("GameScene1");
     }
 
-    public void LoadMainMenu()
+    public void LoadSceneByName(string sceneName)
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void EndApplication()

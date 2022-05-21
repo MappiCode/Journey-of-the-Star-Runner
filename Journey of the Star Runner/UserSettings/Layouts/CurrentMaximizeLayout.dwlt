@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 7928
+  controlID: 35082
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 7929
+  controlID: 35072
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 7930
+  controlID: 35073
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6660000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 7ca9ffffb4abffff58d7ffff0ed9ffff66daffffc2dcffff18deffff14e0ffff96f9ffff06fbffff08670000088c00002c940000
+      m_SelectedIDs: d8c3feff
+      m_LastClickedID: -80936
+      m_ExpandedIDs: e8c3feff06c5feffacccfeff50d0feff74d1feff6cd2feff98ecfeff9645ffffd87ffffff288ffff1e89ffff6a9cffff32a1ffff3ec3ffff3ac4ffff32c5ffff06c7ffffded7ffff0ad8ffff74e5ffff18fbffff28fbffffba600000e8600000f2600000ee85000002860000168600002e860000c68a000090930000a2930000bc930000a4940000b8940000cc940000e4940000a29700007ca800000ead0000eaad00002caf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -527,9 +527,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.16180038, y: -0.036934927, z: 138.52063}
+    m_Target: {x: -0.12770347, y: -0.12201657, z: 294.6183}
     speed: 2
-    m_Value: {x: 0.16180038, y: -0.036934927, z: 138.52063}
+    m_Value: {x: -0.10633866, y: -0.11303278, z: 282.01315}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -580,9 +580,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.2315753
+    m_Target: 0.9975359
     speed: 2
-    m_Value: 1.2315753
+    m_Value: 0.9545798
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1716,7 +1716,8 @@ MonoBehaviour:
     m_SaveData: []
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames: []
+    m_ClassNames:
+    - Prefab
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -1726,24 +1727,23 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 1
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 62
+  m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Fonts
   m_LastFoldersGridSize: 62
   m_LastProjectPath: I:\Studium\Interaktive Medien\Journey-of-the-Star-Runner\Journey
     of the Star Runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 70660000
-    m_LastClickedID: 26224
-    m_ExpandedIDs: 000000006c6600006e660000706600007266000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 04ca9a3b
+    m_LastClickedID: 1000000004
+    m_ExpandedIDs: 0000000036660000386600003a6600003c66000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1771,7 +1771,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c6600006e660000706600007266000000ca9a3b
+    m_ExpandedIDs: 0000000036660000386600003a6600003c66000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1796,10 +1796,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b6660000
-    m_LastClickedInstanceID: 26294
+    m_SelectedInstanceIDs: d8c3feff
+    m_LastClickedInstanceID: -80936
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000b07a0000f45400000000000046ac0000e8860000e06100001a62000000ebffff3e7700004a8e0000
+    m_ExpandedInstanceIDs: c6230000b07a0000f454000046ac0000e8860000e06100001a62000000ebffff3e7700004a8e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1824,7 +1824,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 62
+    m_GridSize: 64
   m_SkipHiddenPackages: 1
   m_DirectoriesAreaWidth: 207
 --- !u!114 &14
@@ -1989,4 +1989,4 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 37858
+  m_LastSelectedObjectID: 43108

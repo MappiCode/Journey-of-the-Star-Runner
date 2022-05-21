@@ -25,16 +25,18 @@ public class GameManager : MonoBehaviour
     IEnumerator LevelCountdownCo()
     {
         if (ui != null)
+        {
             ui.Slider.value = 1;
 
-        yield return new WaitForSeconds(1);
-
-        while (levelTimer > 0)
-        {
             yield return new WaitForSeconds(1);
-            levelTimer -= 1;
-            ui.Slider.value = (float) levelTimer / levelTime;
-            //Debug.Log(ui.Slider.value);
+
+            while (levelTimer > 0)
+            {
+                yield return new WaitForSeconds(1);
+                levelTimer -= 1;
+                ui.Slider.value = (float)levelTimer / levelTime;
+                //Debug.Log(ui.Slider.value);
+            }
         }
     }
 

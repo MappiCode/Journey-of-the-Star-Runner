@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hauptmenu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -595,8 +595,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Du bist auf der Suche nach Zivilisation gestorben ...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -835,8 +835,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: nochmal
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
-  m_sharedMaterial: {fileID: -2067859558940100086, guid: 680d25657e86ec340894c60b221fcf71, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d4751515178d983449ea26104dd40fc0, type: 2}
+  m_sharedMaterial: {fileID: 3771316651568508006, guid: d4751515178d983449ea26104dd40fc0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -860,8 +860,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1072,14 +1072,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1738063496}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: LoadMainMenu
-        m_Mode: 1
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: StartGame
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1551713431
