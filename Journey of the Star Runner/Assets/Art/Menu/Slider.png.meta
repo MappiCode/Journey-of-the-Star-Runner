@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 497bcce2f4b318d43880b8ad43cc15b6
+guid: 6380674ef1b3b4e44b616d85f5cd868e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,43 +104,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inventory_Icons_0
+      name: Slider_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 8
-        height: 8
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee5599f45f8983d479935735137d47a8
-      internalID: 1212807521
+      spriteID: 2a2f58db186f30e4ea87b39a3c5a6856
+      internalID: 1632082014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inventory_Icons_1
+      name: Slider_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8
-        height: 8
+        x: 26
+        y: 2
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b09d99b98d0db4d9125c306a6d96da
-      internalID: 206214032
+      spriteID: 8fa599a9133d9d44f9b5e0c52e73f10d
+      internalID: -1423898144
       vertices: []
       indices: 
       edges: []
@@ -156,8 +156,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Inventory_Icons_1: 206214032
-      Inventory_Icons_0: 1212807521
+      Slider_0: 1632082014
+      Slider_1: -1423898144
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

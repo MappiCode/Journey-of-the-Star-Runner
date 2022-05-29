@@ -19,7 +19,6 @@ public class Interface : MonoBehaviour
         TextMeshProUGUI[] textChildren = gameObject.GetComponentsInChildren<TextMeshProUGUI>();
         coinsValueText = textChildren[0];
         livesValueText = textChildren[1];
-        Timer = textChildren[2];
 
         coinsValueText = GetComponentInChildren<TextMeshProUGUI>();
 

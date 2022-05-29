@@ -6,20 +6,53 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    
+    public Interface ui;
+    
     public int levelTimer = 10;
     int levelTime;
 
+    bool GameIsPaused;
+
     bool playerGotHit = false;
 
-    public Interface ui;
 
     private void Start()
     {
+        GameIsPaused = false;
+
         levelTime = levelTimer;
 
         ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
         
         StartCoroutine(LevelCountdownCo());
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
+
+    private void Pause()
+    {
+        Time.timeScale = 0;
+        GameIsPaused = true;
+    }
+
+    private void Resume()
+    {
+        Time.timeScale = 1;
+        GameIsPaused = false;
     }
 
     IEnumerator LevelCountdownCo()
