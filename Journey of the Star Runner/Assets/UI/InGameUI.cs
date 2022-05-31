@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Interface : MonoBehaviour
+public class InGameUI : MonoBehaviour
 {
     public TextMeshProUGUI coinsValueText;
     public TextMeshProUGUI livesValueText;

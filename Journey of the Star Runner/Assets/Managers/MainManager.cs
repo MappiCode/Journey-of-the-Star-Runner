@@ -7,7 +7,7 @@ public class MainManager : MonoBehaviour
     public static MainManager instance;
 
     public Inventory inventory;
-    public Interface ui;
+    public InGameUI ui;
 
     private void Awake()
     {

@@ -7,27 +7,30 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     
-    public Interface ui;
+    public InGameUI ui;
     
     public int levelTimer = 10;
     int levelTime;
 
-    bool GameIsPaused;
-
     bool playerGotHit = false;
 
+    bool GameIsPaused;
+    GameObject pauseMenuUI;
 
     private void Start()
     {
-        GameIsPaused = false;
-
         levelTime = levelTimer;
 
-        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<Interface>();
-        
+        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
+
+        if (PauseMenu.instance != null)
+        {
+            PauseMenu.instance.gm = this;
+            pauseMenuUI = PauseMenu.instance.PauseMenuUI;
+        }
+
         StartCoroutine(LevelCountdownCo());
     }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -43,15 +46,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Pause()
+    public void Pause()
     {
-        Time.timeScale = 0;
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
         GameIsPaused = true;
     }
 
-    private void Resume()
+    public void Resume()
     {
-        Time.timeScale = 1;
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
@@ -89,5 +94,6 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    } 
+    }
+
 }
