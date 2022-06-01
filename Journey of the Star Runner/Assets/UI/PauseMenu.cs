@@ -23,14 +23,10 @@ public class PauseMenu : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-    }
-
     public void InvokeOnGameManager(string functionName)
     {
+        if (gm == null)
+            gm = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
         gm.Invoke(functionName, 0);
     }
-
-    
 }

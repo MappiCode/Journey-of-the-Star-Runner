@@ -5127,6 +5127,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6879630681476313000, guid: c2bdf1f4f0bdc704d8dc9ca58bdd9304, type: 3}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 1635601155}
+    - target: {fileID: 6879630681476313000, guid: c2bdf1f4f0bdc704d8dc9ca58bdd9304, type: 3}
+      propertyPath: levelTimer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6879630681476313001, guid: c2bdf1f4f0bdc704d8dc9ca58bdd9304, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -5457,6 +5465,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1635601155 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2554819812542157065, guid: adb1c5f291690224797006a1fd6edffe, type: 3}
+  m_PrefabInstance: {fileID: 1635601153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb59247dff312f41a2f90ebf6148325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1635601156 stripped

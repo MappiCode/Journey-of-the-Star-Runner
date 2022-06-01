@@ -13,7 +13,6 @@ public class InGameUI : MonoBehaviour
     
     Inventory inventory;
     
-    // Start is called before the first frame update
     void Start()
     {
         TextMeshProUGUI[] textChildren = gameObject.GetComponentsInChildren<TextMeshProUGUI>();
@@ -38,7 +37,8 @@ public class InGameUI : MonoBehaviour
 
     public void UpdateLives()
     {
-        livesValueText.text = inventory.lives.ToString();
+        livesValueText.text = MainManager.instance.inventory.lives.ToString();
+            //inventory.lives.ToString();
     }
 
     public void UpdateCoins()

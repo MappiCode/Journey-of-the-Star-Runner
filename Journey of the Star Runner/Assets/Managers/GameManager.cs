@@ -6,7 +6,6 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    
     public InGameUI ui;
     
     public int levelTimer = 10;
@@ -21,16 +20,18 @@ public class GameManager : MonoBehaviour
     {
         levelTime = levelTimer;
 
-        ui = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
-
         if (PauseMenu.instance != null)
         {
             //PauseMenu.instance.gm = this;
             pauseMenuUI = PauseMenu.instance.PauseMenuUI;
         }
 
+        if(!ui)
+            ui = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
+
         StartCoroutine(LevelCountdownCo());
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -95,5 +96,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
 }
