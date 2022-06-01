@@ -29,7 +29,11 @@ public class InGameUI : MonoBehaviour
             MainManager.instance.ui = this;
         }
         else
+        {
+            Debug.Log("In-Game UI couldn't find a MainManager");
             inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        }
+
 
         UpdateLives();
         UpdateCoins();
@@ -37,8 +41,7 @@ public class InGameUI : MonoBehaviour
 
     public void UpdateLives()
     {
-        livesValueText.text = MainManager.instance.inventory.lives.ToString();
-            //inventory.lives.ToString();
+        livesValueText.text = inventory.lives.ToString();
     }
 
     public void UpdateCoins()

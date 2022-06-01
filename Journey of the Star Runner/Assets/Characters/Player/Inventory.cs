@@ -12,7 +12,8 @@ public class Inventory : MonoBehaviour
     {
         if (MainManager.instance != null)
         {
-            MainManager.instance.inventory = this;
+            if (!MainManager.instance.inventory)
+                MainManager.instance.inventory = this;
         }
     }
 

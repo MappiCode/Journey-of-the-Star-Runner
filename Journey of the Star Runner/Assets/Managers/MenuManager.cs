@@ -7,6 +7,12 @@ public class MenuManager : MonoBehaviour
 {
     public void StartGame()
     {
+        if(!MainManager.instance)
+        {
+            Debug.Log("Reset Inventory");
+            MainManager.instance.inventory.lives = 3;
+            MainManager.instance.inventory.coins = 0;
+        }
         SceneManager.LoadScene("GameScene1");
     }
 

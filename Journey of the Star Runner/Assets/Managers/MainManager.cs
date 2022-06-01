@@ -17,6 +17,8 @@ public class MainManager : MonoBehaviour
             return;
         }
 
+        inventory = GetComponent<Inventory>();
+
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
