@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
         if (PauseMenu.instance != null)
         {
-            PauseMenu.instance.gm = this;
+            //PauseMenu.instance.gm = this;
             pauseMenuUI = PauseMenu.instance.PauseMenuUI;
         }
 

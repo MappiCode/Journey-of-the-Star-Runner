@@ -5,7 +5,6 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public static PauseMenu instance;
-    
 
     public GameObject PauseMenuUI;
 
@@ -18,9 +17,14 @@ public class PauseMenu : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        gm = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
     }
 
     public void InvokeOnGameManager(string functionName)
