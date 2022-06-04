@@ -7,16 +7,19 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
+    public GameObject GraphicOptions;
+    public GameObject AudioOptions;
 
     private void Start()
     {
-        Slider[] slider = FindObjectsOfType<Slider>();
+        Slider[] slider = AudioOptions.GetComponentsInChildren<Slider>();
+            //FindObjectsOfType<Slider>();
 
         float[] values = new float[slider.Length];
 
-        audioMixer.GetFloat("VolumeEffects", out values[0]);
+        audioMixer.GetFloat("VolumeEffects", out values[2]);
         audioMixer.GetFloat("VolumeMusic", out values[1]);
-        audioMixer.GetFloat("VolumeMaster", out values[2]);
+        audioMixer.GetFloat("VolumeMaster", out values[0]);
         
         for(int i = 0; i < slider.Length; i++)
         {
