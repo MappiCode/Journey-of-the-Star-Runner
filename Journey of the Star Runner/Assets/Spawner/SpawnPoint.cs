@@ -13,7 +13,7 @@ public class SpawnPoint : MonoBehaviour
     void Start()
     {
         manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
-        
+
         StartCoroutine(SpawnEnemyCo());
     }
 

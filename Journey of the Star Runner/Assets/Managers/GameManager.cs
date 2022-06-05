@@ -7,12 +7,15 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public InGameUI ui;
-    
+
     public int levelTimer = 10;
     int levelTime;
 
-    bool playerGotHit = false;
+    public int enemiesSpawned;
+    public int enemiesKilled;
 
+    public bool levelInAction = false;
+    bool playerGotHit = false;
     bool GameIsPaused;
     GameObject pauseMenuUI;
 
@@ -34,15 +37,20 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //Pause Game when Escape Key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GameIsPaused)
+            //Not clean, Index higher than 2 should be the Levels 
+            if (SceneManager.GetActiveScene().buildIndex > 2)
             {
-                Resume();
-            }
-            else
-            {
-                Pause();
+                if (GameIsPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
             }
         }
     }
@@ -63,6 +71,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LevelCountdownCo()
     {
+        levelInAction = true;
         if (ui != null)
         {
             ui.Slider.value = 1;
@@ -74,8 +83,8 @@ public class GameManager : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 levelTimer -= 1;
                 ui.Slider.value = (float)levelTimer / levelTime;
-                //Debug.Log(ui.Slider.value);
             }
+            levelInAction = false;
         }
     }
 

@@ -214,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 0}
   levelTimer: 10
+  levelInAction: 0
 --- !u!1001 &78590241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,11 +630,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1810559728317023504, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1810559728317023504, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}

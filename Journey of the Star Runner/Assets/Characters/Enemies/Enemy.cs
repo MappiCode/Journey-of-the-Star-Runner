@@ -15,9 +15,13 @@ public abstract class Enemy : MonoBehaviour
     public GameObject[] drops = { };
     public float dropPropability = 0.5f;
 
+    private GameManager gm;
+
     protected void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gm = FindObjectOfType<GameManager>();
+        gm.enemiesSpawned++;
     }
 
     void FixedUpdate()
@@ -51,6 +55,7 @@ public abstract class Enemy : MonoBehaviour
     void Die()
     {
         DropLoot();
+        gm.enemiesKilled++;
         Destroy(gameObject);
     }
 

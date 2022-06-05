@@ -12,13 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingsScreen.unity
     guid: 7e5bd8b6cce7e29489b6c82ecd1bc3eb
   - enabled: 1
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: 1245caa1c51ee374d982ac1996979a3c
+  - enabled: 1
     path: Assets/Scenes/GameScene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/GameScene2.unity
     guid: ff7766964ef86434c9a7c8b0047a32d1
   - enabled: 1
-    path: Assets/Scenes/GameOverScreen.unity
-    guid: 1245caa1c51ee374d982ac1996979a3c
+    path: Assets/Scenes/EndScreen.unity
+    guid: 00e8d64023fc2e248a6ef2a8b68343cd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 64c880d25f4194043926370d245273fe, type: 2}
