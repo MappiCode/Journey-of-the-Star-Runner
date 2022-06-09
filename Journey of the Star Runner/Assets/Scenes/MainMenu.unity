@@ -214,6 +214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 0}
   levelTimer: 10
+  enemiesSpawned: 0
+  enemiesKilled: 0
   levelInAction: 0
 --- !u!1001 &78590241
 PrefabInstance:
@@ -617,12 +619,16 @@ PrefabInstance:
       value: Button_Start
       objectReference: {fileID: 0}
     - target: {fileID: 1810559726763432110, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1810559726763432110, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1968495169}
     - target: {fileID: 1810559726763432110, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
+      value: LoadSceneByName
       objectReference: {fileID: 0}
     - target: {fileID: 1810559728317023504, guid: 146b3cbab2f191842a25a90bdc7e09a1, type: 3}
       propertyPath: m_text
@@ -650,16 +656,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: orthographic size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.34734735
+      value: 0.001001001
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.6609609
+      value: 0.9985485
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.6619217
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093586, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_Name
@@ -667,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_CropFrame

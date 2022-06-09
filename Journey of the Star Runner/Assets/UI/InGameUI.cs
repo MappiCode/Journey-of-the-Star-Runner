@@ -6,6 +6,7 @@ using TMPro;
 
 public class InGameUI : MonoBehaviour
 {
+    public GameManager gm;
     public TextMeshProUGUI coinsValueText;
     public TextMeshProUGUI livesValueText;
     public TextMeshProUGUI Timer;
@@ -15,6 +16,8 @@ public class InGameUI : MonoBehaviour
     
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
+
         TextMeshProUGUI[] textChildren = gameObject.GetComponentsInChildren<TextMeshProUGUI>();
         coinsValueText = textChildren[0];
         livesValueText = textChildren[1];
@@ -37,6 +40,14 @@ public class InGameUI : MonoBehaviour
 
         UpdateLives();
         UpdateCoins();
+    }
+
+    private void Update()
+    {
+        if (gm.levelInAction == false && (gm.enemiesSpawned == gm.enemiesKilled))
+        {
+            Slider.gameObject.SetActive(false);
+        }
     }
 
     public void UpdateLives()

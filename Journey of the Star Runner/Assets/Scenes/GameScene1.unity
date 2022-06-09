@@ -7667,12 +7667,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
+      propertyPath: m_AllowDynamicResolution
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.001001001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.9985485
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
@@ -7688,7 +7692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_CropFrame
@@ -7705,6 +7709,10 @@ PrefabInstance:
     - target: {fileID: 6993062505787093677, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_CameraType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093677, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_AllowXRRendering
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093678, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_RootOrder

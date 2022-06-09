@@ -902,9 +902,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: orthographic size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.001001001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.9985485
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093585, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093586, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_CropFrame
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_RefResolutionX
+      value: 355
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993062505787093674, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
+      propertyPath: m_RefResolutionY
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6993062505787093678, guid: 32cc7cfaca8fbbb4aa9ecaa4f3b6d7c9, type: 3}
       propertyPath: m_RootOrder
