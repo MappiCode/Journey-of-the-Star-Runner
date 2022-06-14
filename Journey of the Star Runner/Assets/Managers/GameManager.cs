@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public InGameUI ui;
+    public InGameUI inGameUI;
 
     public int levelTimer = 10;
     int levelTime;
@@ -17,20 +17,18 @@ public class GameManager : MonoBehaviour
     public bool levelInAction = false;
     bool playerGotHit = false;
     bool GameIsPaused;
-    GameObject pauseMenuUI;
+    public GameObject pauseMenuUI;
 
     private void Start()
     {
         levelTime = levelTimer;
 
-        if (PauseMenu.instance != null)
-        {
-            //PauseMenu.instance.gm = this;
-            pauseMenuUI = PauseMenu.instance.PauseMenuUI;
-        }
+        pauseMenuUI = GameObject.FindGameObjectWithTag("PauseMenuUI");
+        if (pauseMenuUI != null)
+            pauseMenuUI.SetActive(false);
 
-        if(!ui)
-            ui = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
+        if(!inGameUI)
+            inGameUI = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
 
         StartCoroutine(LevelCountdownCo());
     }
@@ -72,9 +70,9 @@ public class GameManager : MonoBehaviour
     IEnumerator LevelCountdownCo()
     {
         levelInAction = true;
-        if (ui != null)
+        if (inGameUI != null)
         {
-            ui.Slider.value = 1;
+            inGameUI.Slider.value = 1;
 
             yield return new WaitForSeconds(1);
 
@@ -82,7 +80,7 @@ public class GameManager : MonoBehaviour
             {
                 yield return new WaitForSeconds(1);
                 levelTimer -= 1;
-                ui.Slider.value = (float)levelTimer / levelTime;
+                inGameUI.Slider.value = (float)levelTimer / levelTime;
             }
             levelInAction = false;
         }

@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene2.unity
     guid: ff7766964ef86434c9a7c8b0047a32d1
   - enabled: 1
-    path: Assets/Scenes/GameOverScreen.unity
-    guid: 1245caa1c51ee374d982ac1996979a3c
-  - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 00e8d64023fc2e248a6ef2a8b68343cd
+  - enabled: 1
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: 1245caa1c51ee374d982ac1996979a3c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 64c880d25f4194043926370d245273fe, type: 2}

@@ -1,26 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static PauseMenu instance;
-
     public GameObject PauseMenuUI;
 
     public GameManager gm;
+    public EventSystem es;
 
-    private void Awake()
+    private void Start()
     {
-        if(instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
         gm = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
+        es = GameObject.FindObjectOfType<EventSystem>().GetComponent<EventSystem>();
 
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        es.firstSelectedGameObject = GetComponentInChildren<Button>(true).gameObject;
     }
 
     public void InvokeOnGameManager(string functionName)

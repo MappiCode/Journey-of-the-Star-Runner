@@ -9,6 +9,7 @@ TagManager:
   - UI
   - Manager
   - LevelTrigger
+  - PauseMenuUI
   layers:
   - Default
   - TransparentFX
