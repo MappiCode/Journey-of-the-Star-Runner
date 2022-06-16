@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
+        
         Time.timeScale = 0f;
         GameIsPaused = true;
     }

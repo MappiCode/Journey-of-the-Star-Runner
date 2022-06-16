@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject qm;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (qm.activeSelf)
+                qm.SetActive(false);
+            else
+                qm.SetActive(true);
+        }
     }
 }

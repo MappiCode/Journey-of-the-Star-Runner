@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public string[] ignoredMenuNames;
     private void Start()
     {
         if (MainManager.instance != null)
@@ -34,7 +36,11 @@ public class MenuManager : MonoBehaviour
             if (activeSceneName.StartsWith("GameScene"))
                 return;
             else
-                LoadLastScene();
+            {
+                if (ignoredMenuNames.Contains(activeSceneName))
+                    return;
+            }
+            LoadLastScene();
         }
     }
 

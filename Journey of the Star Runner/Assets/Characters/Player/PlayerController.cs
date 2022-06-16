@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // From "2D Top Down Pixel Art RPG Game Dev in Unity 2022 ~ Crash Course Tutorial for Beginners" by Cris' Tutorials from Youtube
         // If movementInput is not 0, try to move
         if(movementInput != Vector2.zero)
         {
@@ -87,6 +88,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    // From "2D Top Down Pixel Art RPG Game Dev in Unity 2022 ~ Crash Course Tutorial for Beginners" by Cris' Tutorials from Youtube
     /// <summary>
     /// Makes the player move, when there is nothing in the players path to collide with 
     /// </summary>
