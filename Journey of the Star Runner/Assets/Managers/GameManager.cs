@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         if(!inGameUI)
             inGameUI = GameObject.FindGameObjectWithTag("UI").GetComponent<InGameUI>();
 
+        MainManager.instance.AudioCutoff(false);
         StartCoroutine(LevelCountdownCo());
     }
 
@@ -56,8 +57,8 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        
         Time.timeScale = 0f;
+        MainManager.instance.AudioCutoff(true);
         GameIsPaused = true;
     }
 
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
+        MainManager.instance.AudioCutoff(false);
         GameIsPaused = false;
     }
 

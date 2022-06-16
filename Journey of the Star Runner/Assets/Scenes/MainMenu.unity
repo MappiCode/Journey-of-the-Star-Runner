@@ -1044,6 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   ui: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 62187631db7344949af828678a747167, type: 2}
   activeSceneName: 
   lastSceneName: 
 --- !u!82 &1359856726

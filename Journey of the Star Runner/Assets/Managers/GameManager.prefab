@@ -44,4 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87731528c56e72e4ea2daed421036d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inGameUI: {fileID: 0}
   levelTimer: 60
+  enemiesSpawned: 0
+  enemiesKilled: 0
+  levelInAction: 0
+  pauseMenuUI: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 62187631db7344949af828678a747167, type: 2}

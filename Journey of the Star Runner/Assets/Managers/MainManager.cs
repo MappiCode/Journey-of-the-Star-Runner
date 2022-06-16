@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainManager : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class MainManager : MonoBehaviour
 
     public Inventory inventory;
     public InGameUI ui;
+    public AudioMixer audioMixer;
 
     public string activeSceneName;
     public string lastSceneName;
@@ -26,5 +27,20 @@ public class MainManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void AudioCutoff(bool cutoff)
+    {
+        if (cutoff)
+        {
+            audioMixer.SetFloat("MusicHighpassCutoffFreq", 220f);
+            audioMixer.SetFloat("MusicLowpassCutoffFreq", 3000f);
+            return;
+        }
+        if (!cutoff)
+        {
+            audioMixer.SetFloat("MusicHighpassCutoffFreq", 10f);
+            audioMixer.SetFloat("MusicLowpassCutoffFreq", 22000f);
+        }
     }
 }
