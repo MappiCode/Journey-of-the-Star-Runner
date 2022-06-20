@@ -6797,6 +6797,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3875357760702356173, guid: 51e805f6066263649ac7da71da59e8b5, type: 3}
+      propertyPath: m_fontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3875357760702356173, guid: 51e805f6066263649ac7da71da59e8b5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e805f6066263649ac7da71da59e8b5, type: 3}
 --- !u!1001 &6839439054946012709
